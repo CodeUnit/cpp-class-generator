@@ -161,7 +161,7 @@ class FileFactory {
 
 		let headerExt = template.header_extension === undefined ? ".h" : template.header_extension;
 		let sourceExt = template.source_extension === undefined ? ".cpp" : template.source_extension;
-		let singleHeaderExt = template.header_extension === undefined ? ".hpp" : template.header_extension;
+		let singleHeaderExt = template.header_extension === undefined ? ".h" : template.header_extension;
 		let headerFileTemplate = (template.header as Array<string>).join('\n');
 		this.sourceName = `${filename}${sourceExt}`;
 
